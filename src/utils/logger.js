@@ -36,17 +36,15 @@ const logger = winston.createLogger({
   exitOnError: false,
 });
 
-// Console colorido somente em desenvolvimento
-if (process.env.NODE_ENV !== 'production') {
-  logger.add(
-    new winston.transports.Console({
-      format: combine(
-        colorize({ all: true }),
-        timestamp({ format: 'HH:mm:ss' }),
-        logLine
-      ),
-    })
-  );
-}
+// Console sempre ativo (necessário para Render/cloud ver os logs)
+logger.add(
+  new winston.transports.Console({
+    format: combine(
+      process.env.NODE_ENV !== 'production' ? colorize({ all: true }) : winston.format.simple(),
+      timestamp({ format: 'HH:mm:ss' }),
+      logLine
+    ),
+  })
+);
 
 export default logger;
