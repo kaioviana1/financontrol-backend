@@ -109,17 +109,17 @@ CREATE TABLE IF NOT EXISTS installments (
 -- Categorias padrão do sistema
 -- ------------------------------------------------------------
 INSERT IGNORE INTO categories (user_id, name, type, color, icon) VALUES
-  (NULL, 'Salário',       'income',  '#22c55e', 'wallet'),
-  (NULL, 'Freelance',     'income',  '#10b981', 'briefcase'),
-  (NULL, 'Investimentos', 'income',  '#3b82f6', 'trending-up'),
-  (NULL, 'Outros',        'income',  '#8b5cf6', 'plus-circle'),
-  (NULL, 'Alimentação',   'expense', '#ef4444', 'utensils'),
-  (NULL, 'Aluguel',       'expense', '#f97316', 'home'),
-  (NULL, 'Transporte',    'expense', '#f59e0b', 'car'),
-  (NULL, 'Saúde',         'expense', '#06b6d4', 'heart'),
-  (NULL, 'Lazer',         'expense', '#ec4899', 'smile'),
-  (NULL, 'Estudos',       'expense', '#6366f1', 'book'),
-  (NULL, 'Assinaturas',   'expense', '#84cc16', 'repeat'),
-  (NULL, 'Compras',       'expense', '#14b8a6', 'shopping-bag'),
-  (NULL, 'Internet',      'expense', '#a855f7', 'wifi'),
-  (NULL, 'Casa',          'expense', '#78716c', 'tool');
+  (NULL, 'Salário',       'income',  '#22c55e', '💰'),
+  (NULL, 'Freelance',     'income',  '#10b981', '💼'),
+  (NULL, 'Investimentos', 'income',  '#3b82f6', '📈'),
+  (NULL, 'Outros',        'income',  '#8b5cf6', '🤝'),
+  (NULL, 'Alimentação',   'expense', '#ef4444', '🍕'),
+  (NULL, 'Aluguel',       'expense', '#f97316', '🏠'),
+  (NULL, 'Transporte',    'expense', '#f59e0b', '🚗'),
+  (NULL, 'Saúde',         'expense', '#06b6d4', '💊'),
+  (NULL, 'Lazer',         'expense', '#ec4899', '🎬'),
+  (NULL, 'Estudos',       'expense', '#6366f1', '📚'),
+  (NULL, 'Assinaturas',   'expense', '#84cc16', '📱'),
+  (NULL, 'Compras',       'expense', '#14b8a6', '🛒'),
+  (NULL, 'Internet',      'expense', '#a855f7', '💡'),
+  (NULL, 'Casa',          'expense', '#78716c', '🏋️');
